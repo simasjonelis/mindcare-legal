@@ -6,7 +6,7 @@
     <title>Privacy Policy for MindCare</title>
     <meta
       name="description"
-      content="MindCare Privacy Policy — including Health Data access via Android Health Connect."
+      content="MindCare Privacy Policy — Health Connect, on-device storage, and Google AdMob banner ads."
     />
     <style>
       :root {
@@ -50,93 +50,52 @@
       }
       h3 {
         font-size: 1.1rem;
-        margin: 1.4rem 0 0.5rem;
+        margin: 1.25rem 0 0.5rem;
       }
       p,
       li {
-        font-size: 1.02rem;
+        color: var(--ink);
       }
       .meta {
         color: var(--muted);
-        margin-bottom: 1.5rem;
-      }
-      .notice {
-        border-left: 4px solid var(--accent);
-        background: #eefaf6;
-        padding: 0.9rem 1rem;
-        margin: 1.25rem 0;
-      }
-      ul {
-        padding-left: 1.2rem;
+        margin: 0 0 1.5rem;
       }
       a {
         color: var(--accent);
       }
       code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         font-size: 0.9em;
-        background: #eef3f6;
-        padding: 0.1em 0.35em;
-        border-radius: 4px;
+      }
+      ul {
+        padding-left: 1.25rem;
       }
     </style>
   </head>
   <body>
     <main>
-      <article class="card">
-        <h1>Privacy Policy for MindCare</h1>
+      <div class="card">
+        <h1>MindCare Privacy Policy</h1>
         <p class="meta">
-          <strong>Last updated:</strong> July 23, 2026<br />
+          <strong>Last updated:</strong> July 27, 2026<br />
           <strong>App:</strong> MindCare (<code>com.mindcare.app</code>)<br />
-          <strong>Contact:</strong>
-          <a href="mailto:mindcare.support@gmail.com">mindcare.support@gmail.com</a>
+          <strong>Contact:</strong> mindcare.support@gmail.com
         </p>
-
-        <div class="notice">
-          <strong>Health Data disclosure:</strong> MindCare may access and collect Health
-          Data through Android Health Connect when you grant permission. Details are in the
-          “Health Data (Android Health Connect)” section below.
-        </div>
 
         <h2>Summary</h2>
         <p>
           MindCare is a mental <strong>wellness</strong> app. Your mood logs, safety plans,
           journal notes, and profile data are stored <strong>on your device</strong>. We do
-          not operate a user account backend or cloud sync service.
+          not operate a user account backend or cloud sync service for that content.
         </p>
-
-        <h2>Interpretation and Definitions</h2>
         <p>
-          For clarity in this Privacy Policy, the following terms apply when used with
-          capital letters:
+          The Android app may show <strong>banner advertisements</strong> via
+          <strong>Google AdMob</strong> on selected screens (for example, Home). That is
+          separate from your wellness and Health Connect data, which MindCare does not send
+          to AdMob.
         </p>
-        <ul>
-          <li>
-            <strong>Application / Service:</strong> the MindCare mobile application provided
-            by Us.
-          </li>
-          <li>
-            <strong>Company / We / Us / Our:</strong> MindCare, operated from Lithuania.
-          </li>
-          <li>
-            <strong>Device:</strong> any device that can access the Service, such as a
-            computer, cellphone, or digital tablet.
-          </li>
-          <li>
-            <strong>Personal Data:</strong> any information that relates to an identified or
-            identifiable individual.
-          </li>
-          <li>
-            <strong>Health Data:</strong> health and fitness information accessed through
-            Android Health Connect with your permission, including steps, sleep, heart rate,
-            resting heart rate, and exercise/activity data.
-          </li>
-          <li>
-            <strong>You:</strong> the individual accessing or using the Service.
-          </li>
-        </ul>
 
-        <h2>Collecting and Using Your Personal Data</h2>
+        <h2>Data we store on your device</h2>
         <p>Depending on how you use the app, locally stored data may include:</p>
         <ul>
           <li>Profile name and optional profile photo</li>
@@ -145,8 +104,8 @@
           <li>AI support chat history</li>
           <li>Meditation/breathing activity and app settings</li>
           <li>
-            Optional <strong>Health Data</strong> from Android Health Connect if you grant
-            permission
+            Optional <strong>Health Data</strong> from Android Health Connect (see below)
+            if you grant permission
           </li>
         </ul>
         <p>
@@ -185,6 +144,16 @@
               <li>
                 Exercise / activity (<code>android.permission.health.READ_EXERCISE</code>)
               </li>
+              <li>
+                Active calories burned
+                (<code>android.permission.health.READ_ACTIVE_CALORIES_BURNED</code>)
+              </li>
+              <li>Distance (<code>android.permission.health.READ_DISTANCE</code>)</li>
+              <li>
+                Health data history
+                (<code>android.permission.health.READ_HEALTH_DATA_HISTORY</code>) when
+                needed so overnight sleep and recent samples are not truncated
+              </li>
             </ul>
           </li>
         </ul>
@@ -194,13 +163,19 @@
           <li>
             Health Data is used <strong>only</strong> to display personal wellness metrics
             on the in-app <strong>Health Dashboard</strong> (for example, today’s steps,
-            recent sleep duration, latest heart-rate reading, and exercise minutes),
-            alongside mood information you already log in MindCare.
+            last night’s sleep duration, latest heart-rate reading, and activity such as
+            exercise minutes, active calories, or distance), alongside mood information you
+            already log in MindCare.
           </li>
           <li>
             Health Data is <strong>not</strong> used for medical diagnosis, treatment,
-            clinical decision-making, advertising, analytics sold to third parties, or
-            credit/insurance decisions.
+            clinical decision-making, advertising targeting, analytics sold to third
+            parties, or credit/insurance decisions.
+          </li>
+          <li>
+            MindCare does <strong>not</strong> send Health Connect records (steps, sleep,
+            heart rate, exercise, calories, distance, or history) to Google AdMob or other
+            advertisers.
           </li>
         </ul>
 
@@ -214,11 +189,45 @@
             MindCare does <strong>not</strong> upload Health Data to a MindCare backend or
             cloud sync service (we do not operate application servers for user content).
           </li>
-          <li>We do <strong>not</strong> sell Health Data or share it with advertisers.</li>
+          <li>
+            We do <strong>not</strong> sell Health Data or share Health Data with
+            advertisers.
+          </li>
           <li>
             You can revoke Health Connect permissions at any time in Android / Health
             Connect settings. From <strong>Profile → Privacy &amp; Security</strong> you
             can also delete MindCare app data stored on the device.
+          </li>
+        </ul>
+
+        <h2>Advertising (Google AdMob)</h2>
+        <p>
+          On Android, MindCare may display <strong>banner ads</strong> using the
+          <strong>Google Mobile Ads (AdMob)</strong> SDK on selected screens (currently
+          Home).
+        </p>
+        <ul>
+          <li>
+            Ad requests are handled by <strong>Google</strong>. Google may collect or
+            process device advertising identifiers, IP address, coarse device/app signals,
+            and similar data needed to serve and measure ads, under
+            <a href="https://policies.google.com/privacy">Google’s advertising / privacy
+            policies</a>.
+          </li>
+          <li>
+            MindCare requests <strong>non-personalized ads</strong> where the SDK option is
+            available; Google may still serve ads and collect limited technical data
+            required for delivery and fraud prevention.
+          </li>
+          <li>
+            MindCare does <strong>not</strong> sell your data. MindCare does
+            <strong>not</strong> provide your mood logs, safety plans, journal notes, AI
+            chat content, or Health Connect data to AdMob for ad targeting.
+          </li>
+          <li>
+            You can reset or limit the advertising ID and ad personalization in your device
+            settings (Android: Settings → Google → Ads, or equivalent) and in Google
+            account ad settings.
           </li>
         </ul>
 
@@ -230,8 +239,8 @@
         <p>The app may contact third-party services in these cases:</p>
         <ul>
           <li>
-            Streaming meditation/nature audio from public CDN URLs (no personal data is
-            sent)
+            Streaming meditation/nature audio from public CDN URLs (no personal wellness
+            data is sent)
           </li>
           <li>
             Optional crash reporting when configured at build time — only sanitized error
@@ -242,19 +251,25 @@
             External crisis resources when you tap phone/SMS/web links on the Crisis
             Support screen
           </li>
+          <li>
+            Google AdMob, as described in <strong>Advertising (Google AdMob)</strong> above
+          </li>
         </ul>
-        <p>We do <strong>not</strong> sell your data or use it for advertising.</p>
 
         <h2>Your choices</h2>
         <p>From <strong>Profile → Privacy &amp; Security</strong> you can:</p>
         <ul>
-          <li>Review how data is handled</li>
+          <li>Review how data is handled (including this Privacy Policy)</li>
           <li>Delete all app data from your device</li>
         </ul>
-        <p>
-          You can also manage or revoke Health Connect permissions in Android system
-          settings / the Health Connect app.
-        </p>
+        <p>You can also:</p>
+        <ul>
+          <li>
+            Manage or revoke Health Connect permissions in Android system settings / the
+            Health Connect app
+          </li>
+          <li>Limit ad personalization via device / Google advertising settings</li>
+        </ul>
 
         <h2>Children</h2>
         <p>
@@ -277,11 +292,8 @@
         </p>
 
         <h2>Contact</h2>
-        <p>
-          Questions:
-          <a href="mailto:mindcare.support@gmail.com"><strong>mindcare.support@gmail.com</strong></a>
-        </p>
-      </article>
+        <p>Questions: <strong>mindcare.support@gmail.com</strong></p>
+      </div>
     </main>
   </body>
 </html>
